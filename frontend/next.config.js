@@ -12,6 +12,11 @@ const nextConfig = {
         hostname: 'images.crunchbase.com',
         port: '',
         pathname: '/**'
+      },{
+        protocol: 'https',
+        hostname: 'raw.githubusercontent.com',
+        port: '',
+        pathname: '/**'
       }
     ],
   },

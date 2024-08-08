@@ -6,7 +6,7 @@ import { BACKEND_API_FETCH } from "@/config";
 import axios from "axios";
 import Image from "next/image";
 import { useSearchParams } from "next/navigation";
-import { useEffect, useRef, useState } from "react";
+import { Suspense, useEffect, useRef, useState } from "react";
 
 type Org = {
   title: string ;
@@ -56,7 +56,7 @@ const BlogDetailsPage = () => {
 
   console.log(org);
   return (
-    <>
+    <Suspense>
       <section className="pb-[120px] pt-[150px]">
         <div className="container">
           <div className="-mx-4 flex flex-wrap justify-center">
@@ -326,7 +326,7 @@ const BlogDetailsPage = () => {
           </div>
         </div>
       </section>
-    </>
+    </Suspense>
   );
 };
 
