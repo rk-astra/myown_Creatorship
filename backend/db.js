@@ -51,7 +51,6 @@ const dataSchema = new mongoose.Schema({
   paragraph: { type: String }
 });
 const Data = mongoose.model("organizationDataTuple", dataSchema);
-
 module.exports = { Data };
 
 
